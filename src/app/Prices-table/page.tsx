@@ -3,8 +3,8 @@
 import Header from "@/components/layout/Header";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaBitcoin, FaDollarSign, FaCoins, FaSearch, FaFilter } from "react-icons/fa";
-import { Sparkles, TrendingUp, TrendingDown, DollarSign, Gem } from "lucide-react";
+import { FaBitcoin, FaDollarSign, FaCoins, FaSearch } from "react-icons/fa";
+import { Sparkles, TrendingUp, TrendingDown, DollarSign } from "lucide-react";
 import * as Select from "@radix-ui/react-select";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import theme from "@/lib/theme";
@@ -95,7 +95,7 @@ export default function PricesTableCards() {
       item.symbol.toLowerCase().includes(search.toLowerCase())
   );
 
-  const getIcon = (symbol: string, category: string) => {
+  const getIcon = (_symbol: string, category: string) => {
     if (category === "cryptocurrency") return <FaBitcoin className="text-yellow-500 w-5 h-5" />;
     if (category === "currency") return <FaDollarSign className="text-green-500 w-5 h-5" />;
     return <FaCoins className="text-orange-400 w-5 h-5" />;
@@ -103,18 +103,6 @@ export default function PricesTableCards() {
 
   
 
-  const getCategoryName = (cat: string) => {
-    switch (cat) {
-      case "gold":
-        return "طلا و سکه";
-      case "currency":
-        return "ارزها";
-      case "cryptocurrency":
-        return "رمزارزها";
-      default:
-        return "همه";
-    }
-  };
 
   return (
     <>
