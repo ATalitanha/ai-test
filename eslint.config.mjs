@@ -4,7 +4,7 @@ import { FlatCompat } from "@eslint/eslintrc";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
 }
 
