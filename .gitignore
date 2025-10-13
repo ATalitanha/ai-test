@@ -42,3 +42,5 @@ next-env.d.ts
 my-fullstack-ap
 .qodo
 .vscode
+
+package-lock.json
