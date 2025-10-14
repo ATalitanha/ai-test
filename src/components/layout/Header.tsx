@@ -52,8 +52,8 @@ const Header = ({ backTo }: HeaderProps) => {
   }, [menuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-40 backdrop-blur bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed conta top-0 left-0 w-full z-40 backdrop-blur bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+      <div className="container mx-auto">
         <div className="flex items-center justify-between h-16">
           {/* Left: back button */}
           <div className="flex items-center min-w-[48px]">
@@ -66,13 +66,14 @@ const Header = ({ backTo }: HeaderProps) => {
                 <ArrowLeft className="w-5 h-5 text-blue-600 dark:text-blue-300" />
               </button>
             )}
+            
           </div>
 
           {/* Center: logo/title */}
-          <div className="flex-1 flex justify-center items-center">
+          <div className="flex-1 fixed top-1/2 right-1/2 translate-1/2 -translate-y-1/2 flex justify-center items-center">
             <Link href="/" className="flex items-center gap-2 select-none">
-              <span className="inline-block h-8 w-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-md shadow">
-              <span className="font-bold text-xl text-gray-900 dark:text-white tracking-tight"></span>
+              <span className="inline-block p-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-md shadow">
+              <span className="font-bold text-xl text-gray-900 dark:text-white tracking-tight">Tanha App</span>
               </span>
             </Link>
           </div>
@@ -100,8 +101,8 @@ const Header = ({ backTo }: HeaderProps) => {
                   <Menu className="ml-1 text-blue-500 dark:text-gray-300" size={18} />
                 </button>
                 {menuOpen && (
-                  <div className="absolute right-0 mt-2 w-52 bg-white dark:bg-gray-900 rounded-xl shadow-2xl z-50 border border-gray-200 dark:border-gray-800 py-2">
-                    <ul className="space-y-1">
+                  <div className="absolute left-0 mt-2 w-52 bg-white dark:bg-gray-900 rounded-xl shadow-2xl z-50 border border-gray-200 dark:border-gray-800 py-2">
+                    <ul className="space-y-1 text-gray-400">
                       <li>
                         <Link href="/dashboard" className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-800 transition">
                           <UserIcon size={18} />
