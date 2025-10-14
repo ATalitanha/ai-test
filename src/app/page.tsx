@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChangeLog } from "@/components/change-log";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import Header from "@/components/layout/Header";
 import { Search, Sparkles, Zap, TrendingUp } from "lucide-react";
 
