@@ -1,8 +1,7 @@
 "use client";
 
-import LoadingDots from "@/components/loading";
 import ConfirmModal from "@/components/DeleteConfirmModal";
-import Header from "@/components/ui/header";
+import Header from "@/components/layout/Header";
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";

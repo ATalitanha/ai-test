@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Header from "@/components/layout/Header";
 import { evaluate } from "mathjs";
-import { Sparkles, Calculator, History, Trash2, RotateCcw, ArrowLeft } from "lucide-react";
+import { Sparkles, History, Trash2, RotateCcw } from "lucide-react";
 
 // ✳️ تعریف نوع داده برای آیتم‌های تاریخچه
 type HistoryItem = {

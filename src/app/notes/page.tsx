@@ -1,6 +1,5 @@
 "use client";
 
-import LoadingDots from "@/components/loading";
 import ConfirmModal from "@/components/DeleteConfirmModal";
 import Header from "@/components/layout/Header";
 import theme from "@/lib/theme";

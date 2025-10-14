@@ -52,7 +52,7 @@ const Header = ({ backTo }: HeaderProps) => {
   }, [menuOpen]);
 
   return (
-    <header className="fixed conta top-0 left-0 w-full z-40 backdrop-blur bg-white/80 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-800 shadow-sm">
+    <header className="fixed conta top-0 left-0 w-full z-40 backdrop-blur from-slate-100 via-slate-200 to-slate-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-16">
           {/* Left: back button */}
