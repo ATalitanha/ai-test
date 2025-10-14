@@ -73,7 +73,7 @@ const Header = ({ backTo }: HeaderProps) => {
           <div className="flex-1 fixed top-1/2 right-1/2 translate-1/2 -translate-y-1/2 flex justify-center items-center">
             <Link href="/" className="flex items-center gap-2 select-none">
               <span className="inline-block p-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-md shadow">
-              <span className="font-bold text-xl text-gray-900 dark:text-white tracking-tight">Tanha App</span>
+              <span className="font-bold text-xl tracking-tight">Tanha App</span>
               </span>
             </Link>
           </div>

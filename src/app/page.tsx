@@ -115,7 +115,7 @@ export default function HomePage() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
-          className="flex flex-row-reverse items-center justify-between w-full mt-6 relative z-10 pt-20"
+          className="flex flex-row-reverse items-center justify-between w-full mb-6 relative z-10 pt-20"
         >
           <button
             onClick={() => setIsChangeLogOpen(true)}
