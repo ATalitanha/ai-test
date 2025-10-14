@@ -54,21 +54,7 @@ export default function HomePage() {
       color: "from-purple-500 to-indigo-600",
       icon: "📝",
       category: "تولیدیت"
-    },
-    { 
-      href: "/dashboard", 
-      label: "حساب کاربری", 
-      color: "from-pink-500 to-rose-600",
-      icon: "👤",
-      category: "حساب"
-    },
-    { 
-      href: "/login", 
-      label: "ورود / ثبت‌نام", 
-      color: "from-sky-500 to-cyan-600",
-      icon: "🔐",
-      category: "حساب"
-    },
+    }, 
     { 
       href: "/Prices-table", 
       label: "قیمت لحظه‌ای طلا و ارز", 
